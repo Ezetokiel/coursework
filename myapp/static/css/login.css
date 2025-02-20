@@ -1,0 +1,128 @@
+@import url("globals.css");
+
+.main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 70%;
+}
+
+.welcome-container{
+  background-color: var(--text);
+  height: 100%;
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px 0 0 8px;
+}
+
+.form-container{
+  background-color: var(--white);
+  height: 100%;
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 8px 8px 0;
+}
+
+.welcome-container h2{
+  font-size: 36px;
+  color: var(--grey);
+  margin-bottom: 30px;
+}
+
+.welcome-container p{
+  font-size: 18px;
+  color: var(--grey);
+  opacity: 0.8;
+}
+
+.form-container h1{
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: var(--text);
+}
+
+.input-fields{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-fields input{
+  outline: none;
+  padding: 10px 15px;
+  border: none;
+  width: 100%;
+  background-color: var(--grey);
+  border-radius: 4px;
+}
+
+.password-related{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.span label{
+  color: var(--text);
+}
+
+.span input:checked{
+  accent-color: var(--text);
+}
+
+.btn{
+  background-color: var(--text);
+  border: none;
+  padding: 10px;
+  width: 90%;
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn:active, .btn:hover{
+  opacity: 0.8;
+}
+
+.link{
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.link:hover, .link:active{
+  opacity: 0.8;
+  text-decoration: underline;
+}
+

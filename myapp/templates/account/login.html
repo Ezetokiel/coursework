@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/globals.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Login</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main-container">
+          <div class="welcome-container">
+            <h2>Welcome to Schedulify. Log in to begin</h2>
+            <p>The perfect place to organise your tasks throughout the week</p>
+          </div>
+  
+          <div class="form-container">
+            <h1>Log in</h1>
+            <section class="input-fields">
+              <input type="email" placeholder="Email" id="email" name="email"/>
+              <input type="password" placeholder="Password" id="password" name="password"/>
+            </section>
+  
+            <section class="password-related">
+              <span class="span">
+                <label for="show-password">Show password</label>
+                <input type="checkbox" id="show-password"/>
+              </span>
+              <a href="" class="link">Forgot password?</a>
+            </section>
+  
+            <button type="submit" class="btn">Log in</button>
+            <a href="signup/" class="link">Don't have an account? Sign up here</a>
+          </div>
+        </div>
+      </main>
+</body>
+</html>

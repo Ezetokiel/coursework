@@ -1,0 +1,78 @@
+@import url("globals.css");
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+    border-radius: 8px;
+    min-width: 480px;
+    height: 70%;
+}
+
+.form-container h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: var(--text);
+}
+
+.input-fields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.input-fields input{
+    outline: none;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    background-color: var(--grey);
+    border-radius: 4px;
+}
+
+.password-section{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn{
+    background-color: var(--text);
+    border: none;
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn:active, .btn:hover{
+    opacity: 0.8;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.link:hover, .link:active{
+    opacity: 0.8;
+    text-decoration: underline;
+}
