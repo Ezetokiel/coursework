@@ -1,6 +1,6 @@
 @import url("globals.css");
 
-.main{
+main{
     height: 100%;
     width: 100%;
     display: flex;
@@ -10,59 +10,63 @@
 
 .form-container{
     background-color: var(--white);
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 40px 60px;
-    border-radius: 8px;
     min-width: 480px;
-    height: 70%;
 }
 
 .form-container h1{
+    color: var(--text);
+    font-size: 36px;
     margin-bottom: 30px;
-    font-size: 40px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 85%;
+}
+
+.text-field{
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    background-color: var(--grey);
+    width: 100%;
+    border-radius: 4px;
+}
+
+.show-password-container{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.show-password-container label{
     color: var(--text);
 }
 
-.input-fields{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
+.show-password-container input:checked{
+    accent-color: var(--text);
+}
+
+form button{
     width: 100%;
-    margin-bottom: 30px;
-}
-
-.input-fields input{
-    outline: none;
-    padding: 10px 15px;
-    border: none;
-    width: 100%;
-    background-color: var(--grey);
-    border-radius: 4px;
-}
-
-.password-section{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.btn{
     background-color: var(--text);
     border: none;
-    padding: 8px 10px;
-    width: 100%;
     border-radius: 4px;
-    color: var(--white);
-    font-size: 20px;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: var(--background);
+    margin-bottom: 30px;
+    transition: all ease 0.3s;
     text-transform: uppercase;
-    transition: all 0.3s ease;
 }
-
-.btn:active, .btn:hover{
+  
+form button:hover{
     opacity: 0.8;
 }
 
@@ -71,8 +75,8 @@
     color: var(--text);
     transition: all 0.3s ease;
 }
-
-.link:hover, .link:active{
+  
+.link:hover{
     opacity: 0.8;
     text-decoration: underline;
 }

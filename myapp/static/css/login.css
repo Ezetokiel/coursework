@@ -1,6 +1,6 @@
 @import url("globals.css");
 
-.main{
+main{
   height: 100%;
   width: 100%;
   display: flex;
@@ -8,111 +8,91 @@
   align-items: center;
 }
 
-.main-container{
+.overall-container{
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 80%;
-  width: 70%;
+  width: 75%;
 }
 
 .welcome-container{
+  width: 50%;
   background-color: var(--text);
-  height: 100%;
-  width: 50%;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   border-radius: 8px 0 0 8px;
-}
-
-.form-container{
-  background-color: var(--white);
-  height: 100%;
-  width: 50%;
-  padding: 40px;
+  padding: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  border-radius: 0 8px 8px 0;
+  justify-content: center;
+  gap: 30px;
 }
 
 .welcome-container h2{
-  font-size: 36px;
-  color: var(--grey);
-  margin-bottom: 30px;
+  color: var(--background);
+  font-size: 32px;
 }
 
 .welcome-container p{
-  font-size: 18px;
   color: var(--grey);
-  opacity: 0.8;
+}
+
+.form-container{
+  width: 50%;
+  background-color: var(--white);
+  border-radius: 0 8px 8px 0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form-container h1{
-  margin-bottom: 30px;
-  font-size: 40px;
   color: var(--text);
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
-.input-fields{
+form{
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90%;
   gap: 15px;
-  margin-bottom: 20px;
 }
 
-.input-fields input{
-  outline: none;
-  padding: 10px 15px;
+form input{
   border: none;
-  width: 100%;
+  outline: none;
+  padding: 10px 12px;
   background-color: var(--grey);
+  width: 100%;
   border-radius: 4px;
 }
 
-.password-related{
+.password-stuff{
   display: flex;
-  width: 90%;
   justify-content: space-between;
-  margin-bottom: 30px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-.span{
+.show-password-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 6px;
 }
 
-.span label{
+.show-password-container label{
   color: var(--text);
 }
 
-.span input:checked{
+.show-password-container input{
+  width: 13px;
+}
+
+.show-password-container input:checked{
   accent-color: var(--text);
-}
-
-.btn{
-  background-color: var(--text);
-  border: none;
-  padding: 10px;
-  width: 90%;
-  border-radius: 4px;
-  color: var(--white);
-  font-size: 20px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-
-.btn:active, .btn:hover{
-  opacity: 0.8;
 }
 
 .link{
@@ -121,8 +101,24 @@
   transition: all 0.3s ease;
 }
 
-.link:hover, .link:active{
+.link:hover{
   opacity: 0.8;
   text-decoration: underline;
 }
 
+form button{
+  width: 100%;
+  background-color: var(--text);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 18px;
+  color: var(--background);
+  margin-bottom: 30px;
+  transition: all ease 0.3s;
+  text-transform: uppercase;
+}
+
+form button:hover{
+  opacity: 0.8;
+}
