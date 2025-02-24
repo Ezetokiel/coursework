@@ -1,0 +1,101 @@
+@import url("globals.css");
+
+.main-content{
+    padding: 40px;
+    width: calc(100% - 80px);
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.8px solid var(--text);
+    padding: 10px;
+}
+
+.blank{
+    font-size: 24px;
+    visibility: hidden;
+}
+
+.day-title{
+    color: var(--text);
+    font-size: 24px;
+    text-align: center;
+}
+
+.time{
+    color: var(--text);
+    font-size: 22px;
+}
+
+.box{
+    background-color: var(--white);
+    width: 100px;
+    height: 50px;
+}
+
+.right-side{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    padding: 30px 0;
+}
+
+.button{
+    border: none;
+    background-color: var(--text);
+    color: var(--white);
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+
+
+.form{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+}
+
+.form-content{
+    background-color: var(--white);
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.form-content h2{
+    color: var(--text);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+input{
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+
+select{
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+

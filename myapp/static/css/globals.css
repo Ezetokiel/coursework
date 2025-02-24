@@ -23,3 +23,71 @@ body{
     background-color: var(--background);
     font-family: 'Libre Franklin', sans-serif;
 }
+
+/* BASE.HTML */
+.side{
+    width: 220px;
+    height: 100%;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 12px;
+    z-index: 500;
+}
+
+.header{
+   text-decoration: none;
+   color: var(--text);
+   font-size: 28px;
+   font-weight: bold;
+}
+
+nav{
+    width: 100%;
+    margin-top: 220px;
+}
+
+.sidebar{
+    width: 100%;
+}
+
+.sidebar li{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.sidebar li:hover{
+    background-color: var(--grey);
+}
+
+.sidebar li a{
+    color: var(--text);
+    text-decoration: none;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+i{
+    font-size: 20px;
+}
+
+.content{
+    position: relative;
+    top: 0;
+    left: 220px;
+    height: 100%;
+    width: calc(100% - 220px);
+}

@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/globals.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <div class="side">
+        <a href="/home" class="header">Schedulify</a>
+        <nav>
+            <ul class="sidebar">
+                <li><a href="/home"><i class='bx bx-home'></i>Home</a></li>
+                <li><a href="/schedule"><i class='bx bx-calendar' ></i>Schedule</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="content">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

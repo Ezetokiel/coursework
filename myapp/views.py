@@ -23,6 +23,10 @@ def loginPage(request):
 def homePage(request):
     return render(request, 'main/home.html')
 
+def schedulePage(request):
+    
+    return render(request, 'main/schedule.html')
+
 def signupPage(request):
     if request.method == "POST":
         username = request.POST.get('username')

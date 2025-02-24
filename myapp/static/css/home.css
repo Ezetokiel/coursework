@@ -1,0 +1,19 @@
+@import url("globals.css");
+
+.main-content{
+    padding: 30px;
+}
+
+.main-content h1{
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.right-container{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 220px;
+    padding: 30px 10px;
+}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="main-content">
+        <h1>Welcome back, {{ request.user.username }}!</h1>
+
+
+    </div>
+
+    <div class="right-container">
+        <div class="time">
+            
+        </div>
+    </div>
+{% endblock %}
